@@ -83,6 +83,16 @@ nav ul li a {
     margin-top: 20px;
 }
 
+.contact-button {
+    display: inline-block;
+    background-color: #5e68c8;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
 .cta-button:hover {
     background-color: #373bbf;
 }
