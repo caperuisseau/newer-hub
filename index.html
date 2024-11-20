@@ -3,66 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newer Services</title>
+    <title>Newer Stream</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="regarder les dernière nouveauté des site important de newer">
-    <meta name="robots" content="index, follow">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Newer Hub</div>
-            <ul>
-                <li><a href="#browser">Newer Browser</a></li>
-                <li><a href="#stream">Newer Stream</a></li>
-                <li><a href="#games">Newer Play Games</a></li>
-                <li><a href="#about">À propos</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <h1>Bienvenue sur le hub Newer</h1>
-            <p>Explorez nos services de navigation, de streaming et de jeux.</p>
-        </section>
+        <button id="menuButton" class="menu-btn">☰</button> <!-- Bouton du menu -->
     </header>
-
-    <main>
-        <section id="browser" class="service-section">
-            <h2>Newer Browser : Naviguez Différemment</h2>
-            <p>Découvrez une nouvelle façon de naviguer sur le web avec Newer Browser.</p>
-            <h4>Dernière mise a jour :</h4>
-            <p>le </p><h2>23 août 2024 à 8h 03</h2>
-            <p>enlevage de bouton inutiles et ajoute de bouton utile</p>
-            <a href="https://newer-browser.netlify.app" class="cta-button">Visitez Newer Browser</a>
-        </section>
-
-        <section id="stream" class="service-section">
-            <h2>Newer Stream : Vos Flux Préférés, Instantanément</h2>
-            <p>Profitez d'un streaming rapide et de haute qualité avec Newer Stream.</p>
-            <h1>ANNONCE</h1>
-            <h3>le site reprend de plus BELLE!</h3>
-            <h3>ce site va revenir en force avec une nouvelle interface mais tout est en developpement!</h3>
-            <h3>pour l'instant sur le site seul quelques vidéos ont été supprimé car trop lourdes mais elle vont surement revenir</h3>
-            <a href="https://newer-stream.netlify.app" class="cta-button">Visitez Newer Stream</a>
-        </section>
-
-        <section id="games" class="service-section">
-            <h2>Newer Play Games : Le Futur du Jeu</h2>
-            <p>Jouez à des jeux de haute performance avec Newer Play Games.</p>
-            <a href="https://newer-play-games.netlify.app" class="cta-button">Visitez Newer Play Games</a>
-        </section>
-
-        <section id="about" class="about-section">
-            <h2>À propos de Newer</h2>
-            <p>Newer Hub rassemble les meilleurs services pour naviguer, streamer et jouer. Notre mission est de vous offrir une expérience fluide, rapide et agréable.</p>
-        </section>
+    
+    <main class="video-container">
+        <video id="video" controls>
+            <source src="videos/jumper_shell_ep1.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div class="controls">
+            <button id="prevVideo">Précédent</button>
+            <button id="nextVideo">Suivant</button>
+        </div>
+        <div class="info" id="videoTitle">Titre de la Vidéo</div>
     </main>
 
-    <footer>
-        <div class="footer-info"></div>
-            <p>&copy; 2024 Newer Services. Tous droits réservés.</p>
-    </footer>
+    <!-- Menu avec liste des vidéos -->
+    <aside id="videoMenu" class="video-menu">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Rechercher une vidéo...">
+        <ul id="videoList" class="video-list">
+            <!-- Liste des vidéos sera générée dynamiquement ici -->
+        </ul>
+    </aside>
 
-    <script src="scripts.js"></script>
+    <aside class="ad-container">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1903665151787050" data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </aside>
 </body>
 </html>
-
